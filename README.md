@@ -15,7 +15,7 @@ Make sure you have a recent version of node installed and yarn installed.
 Run:
 
 ```bash
-git clone https://github.com/function-camp/create-react-app-seed.git my-project
+git clone https://github.com/functioncamp/create-react-app-seed.git my-project
 cd my-project
 yarn install
 rm -rf ./.git # deletes all the git things
