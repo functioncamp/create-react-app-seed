@@ -17,12 +17,13 @@ Run:
 ```bash
 git clone https://github.com/functioncamp/create-react-app-seed.git my-project
 cd my-project
-yarn install
 rm -rf ./.git # deletes all the git things
 git init # creates a new git repo from scratch
+git add .
 git commit -m 'Initial commit'
 git remote add origin https://github..../you/your-repo # link the repo to your github repo
 git push origin master # push it to your repo
+yarn install
 yarn start # get to work!
 ```
 
