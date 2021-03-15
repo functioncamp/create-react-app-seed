@@ -7,6 +7,7 @@ This project is similar to running `npx create-react-app` with some differences:
 - When you run `git commit` it checks the lint / prettier formats your code for you
 - It has a Github actions build, so you can check builds pass when you practice with Pull Requests
 - All files are lowercase, because we're not savages!
+- Includes routing with `react-router-dom` package
 
 ## Setup
 
