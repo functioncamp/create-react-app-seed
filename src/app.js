@@ -1,21 +1,26 @@
 import React from 'react'
-import logo from './logo.svg'
-import './app.css'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Welcome from './welcome'
+import OtherPage from './otherPage'
 
-const App = () => {
+const routes = [
+  { path: '/otherPage', component: OtherPage },
+  { path: '/', component: Welcome },
+]
+
+export default function App() {
   return (
-    <div className="app">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="app-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React 123
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        {routes.map((route) => {
+          const Component = route.component
+          return (
+            <Route path={route.path}>
+              <Component />
+            </Route>
+          )
+        })}
+      </Switch>
+    </Router>
   )
 }
-
-export default App

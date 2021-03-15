@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './app'
+import OtherPage from './otherPage'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<App />, div)
+  ReactDOM.render(<OtherPage />, div)
   ReactDOM.unmountComponentAtNode(div)
 })
